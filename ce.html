@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+            background-color: black;
+            border-radius: 0px;
+        }
+        .navbar ul {
+            overflow: auto;
+        }
+        .navbar li {
+            float: left;
+            list-style: none;
+            padding: 5px 5px;
+            margin: 20px 20px;
+        }
+        .navbar li a {
+            padding: 5px 5px;
+            text-decoration: none;
+            color: white;
+        }
+        .navbar li a:hover {
+            color: blue;
+        }
+        .navbar .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: black;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .navbar .dropdown-content a {
+            color: blue;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .navbar .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="home.html">HOME</a></li>
+            <li class="dropdown">
+                <a href="#aboutus" class="dropbtn">ABOUT US</a>
+                <div class="dropdown-content">
+                    <a href="heading.html">Heading</a>
+                    <a href="description.html">Description</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#courses" class="dropbtn">COURSES</a>
+                <div class="dropdown-content">
+                    <a href="cs.html">computer science</a>
+                    <a href="E&E.html">Electrical and Electronics</a>
+                    <a href="me.html">Machanical engineering</a>
+                    <a href="ce.html">Civil engineering</a>
+
+                </div>
+            </li>
+            <li><a href="contactus.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+    <h1>Bachelor of Engineering [BE] (Civil Engineering)</h1><br>
+    <img src="D:\Crome download\robo-fotor-20230712111533.jpg" width="800px" height="400px">
+    <p><h4>BE Civil Engineering is a 4 year undergraduate engineering degree course.<br> This course deals with the construction, design and maintenance of structures such as bridges, canals, tunnels, buildings, waterworks, airports etc.<br>
+    Students must have cleared their 10+2 level examinations with physics, chemistry and mathematics subjects for admission to the BE Civil Engineering course.</h4></p>
+    <h3><b>FOR SYLLABUS COPY:  </b><a href="file:///C:/Users/raj/OneDrive/Desktop/assignment%20ost/cesyl.html">visit this link</a></h3>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+    <style>
+        .contact-form {
+            width: 400px;
+            height: 300px;
+            align-items: center;
+        }
+
+        .contact-form label,
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form input[type="submit"] {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+        .navbar {
+            background-color: black;
+            border-radius: 0px;
+        }
+        .navbar ul {
+            overflow: auto;
+        }
+        .navbar li {
+            float: left;
+            list-style: none;
+            padding: 5px 5px;
+            margin: 20px 20px;
+        }
+        .navbar li a {
+            padding: 5px 5px;
+            text-decoration: none;
+            color: white;
+        }
+        .navbar li a:hover {
+            color: blue;
+        }
+        .image-text-container {
+            background-image: url('C:\Users\Afroz\Downloads\sadiya-fotor-2023071513824.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 900px;
+        }
+
+        h1 {
+            color: #fff; 
+            text-align: center;
+            font-size: 24px;
+        }
+        .navbar .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: black;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .navbar .dropdown-content a {
+            color: blue;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .navbar .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="home.html">HOME</a></li>
+            <li class="dropdown">
+                <a href="#aboutus" class="dropbtn">ABOUT US</a>
+                <div class="dropdown-content">
+                    <a href="heading.html">Heading</a>
+                    <a href="description.html">Description</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#courses" class="dropbtn">COURSES</a>
+                <div class="dropdown-content">
+                    <a href="cs.html">computer science</a>
+                    <a href="E&E.html">Electrical and Electronics</a>
+                    <a href="me.html">Machanical engineering</a>
+                    <a href="ce.html">Civil engineering</a>
+
+                </div>
+            </li>
+            <li><a href="email.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+    <h2>Contact Form</h2>
+    <form class="contact-form" action="#" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <style>
+        .navbar {
+            background-color: black;
+            border-radius: 0px;
+        }
+        .navbar ul {
+            overflow: auto;
+        }
+        .navbar li {
+            float: left;
+            list-style: none;
+            padding: 5px 5px;
+            margin: 20px 20px;
+        }
+        .navbar li a {
+            padding: 5px 5px;
+            text-decoration: none;
+            color: white;
+        }
+        .navbar li a:hover {
+            color: blue;
+        }
+        .image-text-container {
+            background-image: url('C:/Users/Afroz/Downloads/sadiya-fotor-202307151308.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 900px;
+        }
+
+        h1 {
+            color: #fff; 
+            text-align: center;
+            font-size: 24px;
+        }
+        /* Added styles for dropdown menu */
+        .navbar .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: black;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .navbar .dropdown-content a {
+            color: blue;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .navbar .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="image-text-container">
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="home.html">HOME</a></li>
+                <li class="dropdown">
+                    <a href="#aboutus" class="dropbtn">ABOUT US</a>
+                    <div class="dropdown-content">
+                        <a href="heading.html">Heading</a>
+                        <a href="description.html">Description</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#courses" class="dropbtn">COURSES</a>
+                    <div class="dropdown-content">
+                        <a href="cs.html">computer science</a>
+                        <a href="E&E.html">Electrical and Electronics</a>
+                        <a href="me.html">Machanical engineering</a>
+                        <a href="ce.html">Civil engineering</a>
+
+                    </div>
+                </li>
+                <li><a href="email.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

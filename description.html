@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+            background-color: black;
+            border-radius: 0px;
+        }
+        .navbar ul {
+            overflow: auto;
+        }
+        .navbar li {
+            float: left;
+            list-style: none;
+            padding: 5px 5px;
+            margin: 20px 20px;
+        }
+        .navbar li a {
+            padding: 5px 5px;
+            text-decoration: none;
+            color: white;
+        }
+        .navbar li a:hover {
+            color: blue;
+        }
+        .navbar .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: black;
+            min-width: 160px;
+            z-index: 1;
+        }
+        .navbar .dropdown-content a {
+            color: blue;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .navbar .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="home.html">HOME</a></li>
+            <li class="dropdown">
+                <a href="#aboutus" class="dropbtn">ABOUT US</a>
+                <div class="dropdown-content">
+                    <a href="heading.html">Heading</a>
+                    <a href="description.html">Description</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#courses" class="dropbtn">COURSES</a>
+                <div class="dropdown-content">
+                    <a href="cs.html">computer science</a>
+                    <a href="E&E.html">Electrical and Electronics</a>
+                    <a href="me.html">Machanical engineering</a>
+                    <a href="ce.html">Civil engineering</a>
+
+                </div>
+            </li>
+            <li><a href="contactus.html">CONTACT US</a></li>
+        </ul>
+    </nav>
+   <p><h3> Sri Jayachamarajendra College of Engineering is a private Institute established in 1963 and affiliated with VTU Belgaum. The College has been approved by AICTE and NBA and has been ranked at #151 by NIRF 2019. The campus is spread over 117 acres of area.<br>
+
+SJCE is known for its flagship BE course and admission is strictly based on inter-se merit of the qualifying exam. The Institute accepts a valid KCET score followed by counselling rounds for BE admission. The KCET 2021 is scheduled to be conducted between August 28, 2021 and August 30, 2021.<br> 
+
+Candidates who wish to apply for MBA and MCA programs must have a valid PGCET score. The mode of application is both Online and Offline. Check SCJE Admission & Selection Criteria<br>
+
+SCJE provides internship opportunities to students every year. M.Tech students are offered around 8 weeks of Industrial training followed by project assignments. The Internship stipend ranges between INR 15,000/- per month to INR 35,000/- per month. The placement record of the college is also quite good. The average salary package offered is INR 5 LPA.</h3></p>
+</body>
+</html>
